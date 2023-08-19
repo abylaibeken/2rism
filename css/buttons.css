@@ -1,0 +1,32 @@
+.button {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    padding: 24px;
+    height: 72px;
+
+    background: #7B61FF;
+    border-radius: 12px;
+
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    
+    transition: all 0.2s ease-in;
+}
+
+.button:hover {
+    background: #6344ff;
+}
+
+
+.button-search {
+    width: 60px;
+    height: 60px;
+    padding: 18px;
+
+    align-self: center;
+    background: #7B61FF;
+    border-radius: 12px;
+}
