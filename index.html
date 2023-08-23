@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business card website</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./libs/custom-select/custom-select.css">
+    <link rel="stylesheet" href="./libs/autoComplete.js-master/dist/css/autoComplete.01.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container container--header">
+            <nav class="nav">
+                <a href="#" class="logo">
+                    2RISM
+                </a>
+
+                <ul class="nav-list">
+                    <li class="nav-list__item"><a href="#" class="nav-list__link nav-list__link--active">Home</a></li>
+                    <li class="nav-list__item"><a href="https://www.cntraveler.com/gallery/gold-list-europe-hotels" class="nav-list__link">Hotels</a></li>
+                    <li class="nav-list__item"><a href="https://www.tourradar.com/d/europe" class="nav-list__link">Tours</a></li>
+                    <li class="nav-list__item"><a href="#Activities" class="nav-list__link">Activities</a></li>
+                </ul>
+                
+            </nav>
+
+
+            <div class="header__content">
+
+                <h1 class="header__title">
+                    Discover the most engaging places
+                </h1>
+                
+                <button class="button">
+                    <a href="https://earth.google.com/web/">Discover on 3D Globe</a>
+                </button>
+
+            </div>
+
+            <form action="" class="form">
+
+
+                <div class="form__input-wrapper form__input--location">
+                    <label for="location" class="form__label">Location</label>
+                    <input autocomplete="off" type="text" class="form-input" id="autoComplete" placeholder="Explore nearby destinations">
+                </div>
+                
+                <div class="form__input-wrapper form__input--activity">
+                    <label for="activity" class="form__label">Activity</label>
+                    <select name="activity" id="activity" class="form__select">
+                        <option value="All Activities">All Activities</option>
+                        <option value="Culture">Culture</option>
+                        <option value="Sport">Sport</option>
+                        <option value="Extreme">Extreme</option>
+                    </select>
+                </div>
+                
+                <div class="form__input-wrapper form__input--date">
+                    <label for="date" class="form__label">When</label>
+                    <input type="date" class="form-input" id="date" placeholder="Choose a Dates">
+                </div>
+
+                <div class="form__input-wrapper form__input--guests">
+                    <label for="location" class="form__label">Guests</label>
+                    <select name="" id="" class="form__select">
+                        <option value="">1 guest</option>
+                        <option value="">2 guest</option>
+                        <option value="">3 guest</option>
+                        <option value="">4 guests or more</option>
+                    </select>
+                </div>
+
+                <button class="button button--search">
+                    <img src="./img/icon/search.svg" alt="Search">
+                </button>
+            </form>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <!-- Popular -->
+        <section class="section">
+            <div class="section_header">
+                <h2 class="title-1">Popular Destinations</h2>
+            </div>
+            <div class="section__cards section__cards--popular">
+                
+                <article class="card">
+                    <a href="https://earth.google.com/web/search/Cibeles+Fountain,+%d0%bf%d0%bb%d0%be%d1%89%d0%b0%d0%b4%d1%8c+%d0%a1%d0%b8%d0%b1%d0%b5%d0%bb%d0%b5%d1%81,+%d0%9c%d0%b0%d0%b4%d1%80%d0%b8%d0%b4,+%d0%98%d1%81%d0%bf%d0%b0%d0%bd%d0%b8%d1%8f/@40.4193326,-3.6930825,641.40490352a,781.35038306d,35y,0h,45t,0r/data=CrkBGo4BEocBCiQweGQ0MjI4ODRiNjllMTg1NToweDMyNWY3ZTkyOWVlMjJmNzIZxZLNsKw1REAhenB31m6LDcAqTUNpYmVsZXMgRm91bnRhaW4sINC_0LvQvtGJ0LDQtNGMINCh0LjQsdC10LvQtdGBLCDQnNCw0LTRgNC40LQsINCY0YHQv9Cw0L3QuNGPGAIgASImCiQJihLZwienRUARNuqn9fOQQUAZEgcq3gmfI0AhcLsV2EzVKsAoAg" class="card__link"></a>
+                    <img class="card__img" src="./img/cibelesmadrid.jpg" alt="Img">
+                    <h3 class="card__title">Cibeles</h3>
+                    <a href="https://ru.wikipedia.org/wiki/%D0%A4%D0%BE%D0%BD%D1%82%D0%B0%D0%BD_%D0%A1%D0%B8%D0%B1%D0%B5%D0%BB%D0%B5%D1%81" class="card__location">Madrid, Spain</a>
+                </article>
+
+
+                <article class="card">
+                    <a href="https://earth.google.com/web/search/Duomo+Cathedral+Square,+%d0%9c%d0%b8%d0%bb%d0%b0%d0%bd,+%d0%98%d1%82%d0%b0%d0%bb%d0%b8%d1%8f/@45.46388825,9.1907609,121.77880984a,341.66624658d,35y,0h,45t,0r/data=CpsBGnESawolMHg0Nzg2YzZhZTkzOThmYzA3OjB4MTJlNzc1NjJjNjhlOWM4YxldYzzva7tGQCHvp8ZLN2EiQCowRHVvbW8gQ2F0aGVkcmFsIFNxdWFyZSwg0JzQuNC70LDQvSwg0JjRgtCw0LvQuNGPGAIgASImCiQJHNv_Dgg4REARUtSCbo40REAZLCNtzdiGDcAhzkD1uF2_DcAoAg" class="card__link"></a>
+                    <img class="card__img" src="./img/Duomomilan.jpg" alt="Img">
+                    <h3 class="card__title">Duomo-Cathedral</h3>
+                    <a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B8%D0%BB%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D1%81%D0%BE%D0%B1%D0%BE%D1%80" class="card__location">Milan, Italy</a>
+                </article>
+
+                <article class="card">
+                    <a href="https://earth.google.com/web/search/Buckingham+Palace/@51.501364,-0.14189,20.44758998a,627.92852727d,35y,0h,45t,0r/data=CnsaURJLCiQweDQ4NzYwNTIwY2Q1YjVlYjU6MHhhMjZhYmY1MTRkOTAyYTcZJLIPsizASUAhfZHQlnMpwr8qEUJ1Y2tpbmdoYW0gUGFsYWNlGAIgASImCiQJJIBJ_sq7RkAR7Jvwhra6RkAZ-7WXQmViIkAhoqsWcQFeIkAoAg" class="card__link"></a>
+                    <img class="card__img" src="./img/Buckingham-Palace.jpg" alt="Img">
+                    <h3 class="card__title">Buckingham-Palace</h3>
+                    <a href="https://ru.wikipedia.org/wiki/%D0%91%D1%83%D0%BA%D0%B8%D0%BD%D0%B3%D0%B5%D0%BC%D1%81%D0%BA%D0%B8%D0%B9_%D0%B4%D0%B2%D0%BE%D1%80%D0%B5%D1%86" class="card__location">London, England</a>
+                </article>
+
+                <article class="card">
+                    <a href="https://earth.google.com/web/search/Neuschwanstein+Castle,+%d0%9d%d0%be%d0%b9%d1%88%d0%b2%d0%b0%d0%bd%d1%88%d1%82%d0%b0%d0%b9%d0%bd%d1%88%d1%82%d1%80%d0%b0%d1%81%d1%81%d0%b5,+%d0%a8%d0%b2%d0%b0%d0%bd%d0%b3%d0%b0%d1%83,+%d0%93%d0%b5%d1%80%d0%bc%d0%b0%d0%bd%d0%b8%d1%8f/@47.5576361,10.74996819,969.30141086a,170.56455631d,35y,-62.6360585h,44.99672801t,0r/data=CswBGqEBEpoBCiUweDQ3OWNmN2NhYzQ0ZWEzNWQ6MHhjOGE2ODY2YmQzOWRiYmEzGcmMt5Vex0dAITEOidblfyVAKl9OZXVzY2h3YW5zdGVpbiBDYXN0bGUsINCd0L7QudGI0LLQsNC90YjRgtCw0LnQvdGI0YLRgNCw0YHRgdC1LCDQqNCy0LDQvdCz0LDRgywg0JPQtdGA0LzQsNC90LjRjxgCIAEiJgokCZuWhi8NwUlAEUjjeZ29v0lAGVBU5etTf8G_Iej9c6xBhsO_" class="card__link"></a>
+                    <img class="card__img" src="./img/Neuschwanstein-Castle.jpg" alt="Img">
+                    <h3 class="card__title">Neuschwanstein-Castle</h3>
+                    <a href="https://ru.wikipedia.org/wiki/%D0%9D%D0%BE%D0%B9%D1%88%D0%B2%D0%B0%D0%BD%D1%88%D1%82%D0%B0%D0%B9%D0%BD" class="card__location">Bayern, Germany</a>
+                </article>
+
+                <article class="card">
+                    <a href="https://earth.google.com/web/search/Eiffel+tower/@48.85906397,2.29439131,32.27800789a,1277.47010203d,35y,-63.78714058h,19.90947716t,0r/data=CncaTRJHCiUweDQ3ZTY2ZTI5NjRlMzRlMmQ6MHg4ZGRjYTllZTM4MGVmN2UwGZ-uSRLfbUhAIb1EBgMZWwJAKgxFaWZmZWwgdG93ZXIYASABIiYKJAlA7rAU58lHQBEQ2T_N18ZHQBmXFxogpH8lQCEJypxEe28lQA" class="card__link"></a>
+                    <img class="card__img" src="./img/eiffel-tower-paris-france-EIFFEL0217-6ccc3553e98946f18c893018d5b42bde.jpg" alt="Img">
+                    <h3 class="card__title">Eiffel tower</h3>
+                    <a href="https://ru.wikipedia.org/wiki/%D0%AD%D0%B9%D1%84%D0%B5%D0%BB%D0%B5%D0%B2%D0%B0_%D0%B1%D0%B0%D1%88%D0%BD%D1%8F" class="card__location">Paris, France</a>
+                </article>
+
+                <article class="card">
+                    <a href="https://earth.google.com/web/search/red+square+moscow/@55.75424845,37.61998393,147.8879819a,600.11899179d,35y,166.92945206h,45.00023348t,0.00000085r/data=CnwaUhJMCiUweDQ2YjU0YTVhNzM4ZmE0MTk6MHg3YzM0N2Q1MDZiNTIzMTFmGVP7vsmA4EtAIZpC5zV2z0JAKhFyZWQgc3F1YXJlIG1vc2NvdxgCIAEiJgokCdmyOZGlc0hAEVOntNyEaEhAGXOEys52bANAIc8T1yLOQwFA" class="card__link"></a>
+                    <img class="card__img" src="./img/moscow_red-square1.jpg" alt="Img">
+                    <h3 class="card__title">Red Square</h3>
+                    <a href="https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%B0%D1%8F_%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D1%8C" class="card__location">Moscow, Russia</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Hotels -->
+        <section class="section">
+            <div class="section_header">
+                <h2 class="title-1">Hotels and Restaurants</h2>
+            </div>
+            <div class="section__cards section__cards--hotels">
+                
+                <article class="card">
+                    <a href="https://www.fourseasons.com/madrid/" class="card__link"></a>
+                    <img class="card__img" src="./img/hotels-rest/hotel-madrid.jpg" alt="Img">
+                    <h3 class="card__title">Four Seasons Hotel Madrid</h3>
+
+                    <footer class="card__footer">
+
+                        <div href="#madrid" class="card__location card__location--icon">Madrid, Spain</div>
+                        <div class="card__rating">
+
+                        </div>
+                    </footer>
+
+
+                </article>
+
+
+                <article class="card">
+                    <a href="https://www.radissonhotels.com/ru-ru/hotels/radisson-blu-milan" class="card__link"></a>
+                    <img class="card__img" src="./img/hotels-rest/hotel-madrid.jpg" alt="Img">
+                    <h3 class="card__title">Radisson Hotel</h3>
+
+                    <footer class="card__footer">
+
+                        <div href="#milan" class="card__location card__location--icon">Milan, Italy</div>
+                        <div class="card__rating">
+
+                        </div>
+                    </footer>
+
+                </article>
+
+                <article class="card">
+                    <a href="https://www.theritzlondon.com/" class="card__link"></a>
+                    <img class="card__img" src="./img/hotels-rest/hotel-madrid.jpg" alt="Img">
+                    <h3 class="card__title">Ritz-Palace London</h3>
+
+                    <footer class="card__footer">
+
+                        <div href="#london" class="card__location card__location--icon">London, England</div>
+                        <div class="card__rating">
+
+                        </div>
+                    </footer>
+                </article>
+                <article class="card">
+                    <a href="https://www.theritzlondon.com/" class="card__link"></a>
+                    <img class="card__img" src="./img/hotels-rest/hotel-madrid.jpg" alt="Img">
+                    <h3 class="card__title">Ritz-Palace London</h3>
+
+                    <footer class="card__footer">
+
+                        <div href="#london" class="card__location card__location--icon">London, England</div>
+                        <div class="card__rating">
+
+                        </div>
+                    </footer>
+                </article>
+            </div>
+        </section>
+
+
+        <!-- Activities -->
+        <section class="section">
+            <div class="section_header">
+                <h2 class="title-1">Activities</h2>
+            </div>
+            <div class="section__cards section__cards--hotels">
+                
+                <article class="card">
+                    <a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D1%85_%D1%81%D1%82%D0%B0%D0%B4%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2_%D0%BF%D0%BE_%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8" class="card__link"></a>
+                    <img class="card__img" src="./img/Football_in_Bloomington,_Indiana,_1996.jpg" alt="Img">
+                    <h3 class="card__title">Football</h3>
+                </article>
+
+
+                <article class="card">
+                    <a href="https://www.mapotapo.com/rock-climbing-trips" class="card__link"></a>
+                    <img class="card__img" src="./img/How-to-Rock-Climb-A-Beginners-Guide-6.jpg" alt="Img">
+                    <h3 class="card__title">Climbing</h3>
+
+                </article>
+
+                <article class="card">
+                    <a href="https://olympicjumpingcomplex.com/visit/" class="card__link"></a>
+                    <img class="card__img" src="./img/bungee-jumping_1562400390.jpg" alt="Img">
+                    <h3 class="card__title">Jumping</h3>
+
+                </article>
+
+                <article class="card">
+                    <a href="https://www.tourradar.com/f/hiking-trekking" class="card__link"></a>
+                    <img class="card__img" src="./img/hiking_1110x740_72dpi_v1_d2c8d390f0.jpg" alt="Img">
+                    <h3 class="card__title">Hiking</h3>
+
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-row">
+
+                <!-- footer copyright -->
+                <div class="footer-copyright footer-col">
+                    <div class="footer-copyright-name">@ Beken Abylai</div>
+                    <p>Discover the  most engaging places</p>
+                </div>
+                <!-- //footer copyright -->
+
+                <div class="footer-contact footer-col">
+                    <a target="_blank" href="https://www.google.com/maps/" class="footer-button">
+                        View in maps
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./libs/custom-select/custom-select.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./libs/autoComplete.js-master/src/autoComplete.js"></script>
+    <script src="./js/input-dest.js"></script>
+</body>
+</html>
